@@ -1,7 +1,5 @@
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 25px;
-    font-size: 1rem;
 }
 /* header */
 #Reservia{
@@ -39,7 +37,7 @@ nav li a:hover{
     margin-bottom: 0;
 }
 .lieu{
-    margin-top: 0;
+    margin-top: 16px;
 }
 /*Barre de recherche et filtres*/
 #search_bar{
@@ -56,7 +54,6 @@ nav li a:hover{
     font-family: 'Raleway', sans-serif;
     padding: 10px;
     border: 2px solid  #F2F2F2;
-    color: black;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -196,12 +193,186 @@ nav li a:hover{
     color: #0065FC;
     border-radius: 100%;
 }
-
-
-
+#infos{
+    padding-bottom: 30px;
+}
+/* Section Hébergements */
+#hebergements{
+    width: 67%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+#rooms img{
+    width: 100%;
+    height: 9vw;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+#rooms{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#rooms figure{
+    margin: 0;
+}
+#rooms figcaption h4, p{
+    margin: 10px 10px 10px 10px;
+}
+#rooms a{
+    width: 30%;
+    text-decoration-line: none;
+    color: black;
+}
+#rooms .stars{
+    color: #0065FC;
+    margin: 0 0 20px 10px;
+}
+#rooms .stars span{
+    color: #F2F2F2;
+}
+#hebergements .title_rooms{
+    padding: 10px 0 0 25px;
+}
+#hebergements .show_more{
+    padding: 0 0 10px 10px;
+}
+.cannebiere{
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+.hotel-port{
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+.mouettes{
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+    margin-bottom: 20px;
+}
+.mer{
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+.panier{
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+.Amina{
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+/* Section populaires */
+#search_results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#populaires{
+    width: 30%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+}
+.popular_title_icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 35px;
+}
+.popular_title_icon i{
+    display: flex;
+    align-items: center;
+}
+.soleil_matin{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+.coeur_eau{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+.bleu_blanc{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    border: 4px solid white;
+}
+.popular_rooms img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+.popular_rooms a{
+    display: flex;
+    justify-content: center;
+    text-decoration-line: none;
+    height: 21%;
+    color: black;
+}
+.popular_rooms .text_stars{
+    width: 50%;
+}
+.popular_rooms{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}   
+.popular_rooms .text_stars h4 {
+    margin: 0;
+    padding-top: 10px;
+}
+.popular_rooms .text_stars p{
+    margin: 0;
+    padding-top: 10px;
+}
+.popular_rooms .stars{
+    color: #0065FC;
+    padding-top: 20px;
+}
+.popular_rooms .stars span{
+    color: #F2F2F2;
+}
+.vieux_port img{
+    width: 40%;
+    height: 30vw;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.marseille_activities a{
+    text-decoration-line: none;
+    color: black;
 }
 /* Règles applicables pour un écran d'une largeur maximale de 768 pixels */
-@media screen and (max-width: 768px)
+@media screen and (max-width: 768px){
+    
+    
+    
+}
 
     
 
