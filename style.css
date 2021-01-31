@@ -44,7 +44,7 @@ nav li a:hover{
     display: flex;
     margin-bottom: 15px;
 }
-#search_bar i{
+#search_bar span i{
     border: 15px solid  #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -69,113 +69,118 @@ nav li a:hover{
     width: 120px;
     cursor: pointer;
 }
+.loupe{
+    display: none;
+}
 #filters_bar{
-    margin: 30px 0 30px 0;
     display: flex;
     align-items: center;
-    width: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
-#filters_bar h3{
-    margin-right: 30px;
+.filters_title h3{
+    margin-top: 0;
+    margin-bottom: 0;
 }
-#economic{
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-    width: 15%;
-    height: auto;
-    border: 2px solid #F2F2F2;
-    border-radius: 35px 35px;
-    border-left-color: #DEEBFF;
-    cursor: pointer;
+.categories h3{
+    padding-left: 15px;
+    padding-right: 15px;
 }
-#economic:hover{
-    color: #0065FC;
-    background-color: #DEEBFF;
-}
-#economic h3{
-    margin: auto;
-}
-.eco_icon {
+.eco_icon{
     display: flex;
     border: 15px solid #DEEBFF;
     border-radius: 100px;
     color: #0065FC;
     background-color: #DEEBFF;
+    position: relative;
+    right: 2px;
 }
-#family{
-    margin-right: 30px;
+#economic{
+    width: auto;
+    height: 44px;
     display: flex;
     align-items: center;
-    width: 11%;
-    height: auto;
     border: 2px solid #F2F2F2;
-    border-radius: 35px 35px;
-    border-left-color: #DEEBFF;
+    border-radius: 40px;
     cursor: pointer;
+    margin-left: 30px;
 }
-#family h3{
-    margin: auto;
+#economic:hover{
+    color: #0065FC;
+    background-color: #DEEBFF;
 }
 .family_icon{
     display: flex;
     border: 15px solid #DEEBFF;
     border-radius: 100px;
     color: #0065FC;
-    background-color: #DEEBFF; 
+    background-color: #DEEBFF;
+    position: relative;
+    right: 2px; 
+}
+#family{
+    width: auto;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 25px
 }
 #family:hover{
     color: #0065FC;
-    background-color: #DEEBFF; 
-}
-#romantic{
-    margin-right: 30px;
-    display: flex;
-    align-items: center;
-    width: 14%;
-    height: auto;
-    border: 2px solid #F2F2F2;
-    border-radius: 35px 35px;
-    border-left-color: #DEEBFF;
-    cursor: pointer;
-}
-#romantic h3{
-    margin: auto;
+    background-color: #DEEBFF;
 }
 .romantic_icon{
     display: flex;
     border: 15px solid #DEEBFF;
     border-radius: 100px;
     color: #0065FC;
-    background-color: #DEEBFF; 
+    background-color: #DEEBFF;
+    position: relative;
+    right: 2px;
+}
+#romantic{
+    width: auto;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 25px
 }
 #romantic:hover{
     color: #0065FC;
     background-color: #DEEBFF;
 }
-#animals{
-    display: flex;
-    align-items: center;
-    width: 19%;
-    height: auto;
-    border: 2px solid #F2F2F2;
-    border-radius: 35px 35px;
-    border-left-color: #DEEBFF;
-    cursor: pointer;
-}
-#animals h3{
-    margin: auto;
-}
 .animals_icon{
     display: flex;
     border: 15px solid #DEEBFF;
-    border-radius: 100px;
+    border-radius: 100%;
     color: #0065FC;
-    background-color: #DEEBFF; 
+    background-color: #DEEBFF;
+    position: relative;
+    right: 2px;
+}
+#animals{
+    width: auto;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 25px;
 }
 #animals:hover{
     color: #0065FC;
     background-color: #DEEBFF;
+}
+.categories{
+    display: flex;
+    width: 100%;
 }
 .icon-text{
     display: flex;
@@ -212,12 +217,15 @@ nav li a:hover{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-size: 0.95em;
+    font-size: 1em;
 }
 #rooms figure{
     margin: 0;
 }
-#rooms figcaption h4, p{
+#rooms figcaption h4{
+    margin: 10px 10px 10px 10px;
+}
+#rooms figcaption p{
     margin: 10px 10px 10px 10px;
 }
 #rooms a{
@@ -288,7 +296,6 @@ nav li a:hover{
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-left: 20px;
-    font-size: 0.95em;
 }
 .popular_title_icon{
     display: flex;
@@ -300,65 +307,66 @@ nav li a:hover{
     align-items: center;
     font-size: 25px;
 }
-.soleil_matin{
-    width: 85%;
+.popular_rooms{
+    height: 85%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: white;
-    border-radius: 25px;
-    border: 5px solid white;
-}
-.coeur_eau{
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 25px;
-    border: 5px solid white;
-}
-.bleu_blanc{
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 25px;
-    border: 5px solid white;
 }
 .popular_rooms img{
-    width: 40%;
-    height: 100%;
+    width: 125px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 20px 0 0 20px;
+    display: flex;
+    border-radius: 15px 0 0 15px;
 }
 .popular_rooms a{
     display: flex;
     justify-content: center;
     text-decoration-line: none;
-    height: 21%;
     color: black;
 }
 .popular_rooms .text_stars{
-    width: 50%;
-}
-.popular_rooms{
-    height: 100%;
+    padding-left: 20px;
     display: flex;
-    flex-wrap: wrap;
-}   
-.popular_rooms .text_stars h4 {
-    margin: 0;
-    padding-top: 10px;
+    flex-direction: column;
+    justify-content: space-around;
 }
-.popular_rooms .text_stars p{
+.text_stars h4{
+    margin: 0 0 10px 0;
+}
+.text_stars p{
     margin: 0;
-    padding-top: 10px;
 }
 .popular_rooms .stars{
     color: #0065FC;
-    padding-top: 20px;
 }
 .popular_rooms .stars span{
     color: #F2F2F2;
+}
+.soleil_matin{
+    display: flex;
+    width: 80%;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+.coeur_eau{
+    display: flex;
+    width: 80%;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid white;
+}
+.bleu_blanc{
+    display: flex;
+    width: 80%;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid white;
 }
 /*Section activités*/
 .title_activities{
@@ -373,7 +381,8 @@ nav li a:hover{
     color: black;
     width: 22%;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px 4px #F2F2F2;
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
 .vieux_port img{
     width: 100%;
@@ -392,14 +401,16 @@ nav li a:hover{
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px 4px #F2F2F2;
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
 .pomegues_frioul .fri{
     width: 100%;
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px 4px #F2F2F2;
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
 .pomegues img{
     width: 100%;
@@ -418,7 +429,8 @@ nav li a:hover{
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px 4px #F2F2F2;
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
 .calanques img{
     width: 100%;
@@ -437,14 +449,16 @@ nav li a:hover{
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px 4px #F2F2F2;
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
 .notredame_longchamp .lo{
     width: 100%;
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px 4px #F2F2F2;
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+    border: 3px solid #F2F2F2;
 }
 .notredame img{
     width: 100%;
@@ -458,12 +472,415 @@ nav li a:hover{
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
-
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin-top: 60px;
+}
+.about ul{
+    list-style-type: none;
+    padding: 0;
+}
+.about ul li a{
+    text-decoration-line: none;
+    color: black;
+}
+.our_rooms ul{
+    list-style-type: none;
+    padding: 0 ;
+}
+.our_rooms ul li a{
+    text-decoration-line: none;
+    color: black;
+}
+.assistance ul{
+    list-style-type: none;
+    padding: 0;
+}
+.assistance ul li a{
+    text-decoration-line: none;
+    color: black;
+}
+footer ul li{
+    padding-bottom: 10px;
+}
+.footer{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
 /* Règles applicables pour un écran d'une largeur maximale de 768 pixels */
-@media screen and (max-width: 768px){
-    
-    
-    
+@media screen and (max-width: 560px){
+    body{
+        margin: 0;
+    }
+    #Reservia{
+        display: block;
+    }
+    #logo{
+        width: 35%;
+        padding-left: 10px;
+    }
+    nav ul{
+        padding: 20px 0 20px 0;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    nav li a:hover{
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+        border-top: none;
+    }
+    #inscription{
+        position: absolute;
+        top: 39px;
+        right: 10px;
+    }
+    #sign-in{
+        padding: 0;
+    }
+    #title1{
+        margin-top: 25px;
+        font-size: 1.3em;
+        padding-left: 15px;
+    }
+    .lieu{
+        font-size: 0.95em;
+        padding-left: 15px;
+    }
+    #search_bar{
+        padding-left: 15px;
+    }
+    .button{
+        display: none;
+    }
+    .loupe{
+        display: flex;
+        border-radius: 10px;
+        background-color: #0065FC;
+        border: 1px solid #0065FC;
+        padding: 0;
+        position: relative;
+        right: 5px;
+    }
+    i.fas.fa-search{
+        color: white;
+        background-color: #0065FC;
+        border: 13px solid #0065FC;
+        border-radius: 10px;
+        font-size: 17px;
+    }
+    .champ{
+        padding: 0 0 0 10px;
+        border-right: 0;
+    }
+    #Filters{
+        padding-left: 10px;
+    }
+    #filters_bar{
+        flex-wrap: wrap;
+    }
+    .filters_title{
+        margin-bottom: 20px;
+    }
+    .categories{
+        flex-wrap: wrap;
+    }
+    #economic{
+        margin: 0px;
+        width: auto;
+        margin: 0 7px 10px 0;
+    }
+    #family{
+        width: auto;
+        margin: 0 7px 10px 0;
+    }
+    #romantic{
+        width: auto;
+        margin: 0 7px 10px 0;
+    }
+    #animals{
+        width: auto;
+        margin-left: 0;
+    }
+    #search_results{
+        flex-direction: column;
+    }
+    #infos{
+        padding-left: 10px;
+    }
+    #populaires{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        order: -1;
+        border-radius: 0;
+        margin-left: 0;
+    }
+    .popular_title_icon{
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    }
+    .popular_rooms{
+        font-size: 0.85em;
+        width: 100%;
+    }
+    .popular_rooms a{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .soleil_matin{
+        width: 85%;
+    }
+    .coeur_eau{
+        width: 85%;
+    }
+    .bleu_blanc{
+        width: 85%;
+    }
+    #hebergements{
+        width: 100%;
+        background-color: white;
+    }
+    #hebergements .title_rooms{
+        padding: 0 0 0 15px;
+    }
+    .title_rooms h2{
+        font-size: 1.3em;
+        margin: 25px 0 20px 0;
+    }
+    #rooms{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #rooms a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #rooms img{
+        height: 35vw;
+    }
+    .cannebiere{
+        border: 3px solid #F2F2F2;
+        box-shadow: 6px 6px 6px #f2f2f2;
+    }
+    .hotel-port{
+        border: 3px solid #F2F2F2;
+        box-shadow: 6px 6px 6px #f2f2f2;
+    }
+    .mouettes{
+        border: 3px solid #F2F2F2;
+        box-shadow: 6px 6px 6px #f2f2f2;
+    }
+    .mer{
+        margin-bottom: 20px;
+        border: 3px solid #F2F2F2;
+        box-shadow: 6px 6px 6px #f2f2f2;
+    }
+    .panier{
+        margin-bottom: 20px;
+        border: 3px solid #F2F2F2;
+        box-shadow: 6px 6px 6px #f2f2f2;
+    }
+    .Amina{
+        margin-bottom: 15px;
+        border: 3px solid #F2F2F2;
+        box-shadow: 6px 6px 6px #f2f2f2; 
+    }
+    #hebergements .show_more{
+        padding: 0 0 10px 20px;
+    }
+    .marseille_activities{
+        flex-direction: column;
+        height: 120%;
+        align-items: center;
+    }
+    .title_activities{
+        margin: 0 0 0 18px;
+    }
+    .marseille_activities .vp{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    .pomegues_frioul{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    .po{
+        margin-bottom: 25px;
+    }
+    .cal{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    .notredame_longchamp{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    .nd{
+        margin-bottom: 25px;
+    }
+    .marseille_activities img{
+        height: 35vw;
+    }
+    .marseille_activities h4{
+        margin-left: 10px;
+    }
+    footer{
+        margin-top: 40px;
+    }
+    .footer{
+        display: block;
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 561px) and (max-width: 1102px){
+    body{
+        margin: 0;
+    }
+    header{
+        padding-left: 20px;
+        padding-right: 15px;   
+    }
+    nav ul{
+        padding-left: 0;
+    }
+    .rooms, .activities{
+        padding: 10px;
+    }
+    #sign-in{
+        padding: 10px;
+    }
+    #search_bar{
+        padding-left: 20px;
+    }
+    #infos{
+        padding-left: 20px;
+    }
+    #filters_bar{
+        display: block;
+    }
+    .filters_title{
+        margin: 0 0 20px 25px;
+    }
+    .categories{
+        display: block;
+    }
+    #economic{
+        width: 200px;
+        margin: 0 0 15px 25px;
+    }
+    #family{
+        width: 150px;
+        margin: 0 0 15px 25px;
+    }
+    #romantic{
+        width: 190px;
+        margin: 0 0 15px 25px;
+    }
+    #animals{
+        width: 250px;
+        margin: 0 0 15px 25px;
+    }
+    #hebergements {
+        width: 100%;
+        background-color: #F2F2F2;
+        margin-bottom: 40px;
+        border-radius: 0;
+    }
+    #rooms {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 0.85em;
+    }
+    #rooms a {
+        width: 35%;
+        text-decoration-line: none;
+        color: black;
+    }
+    #rooms img{
+        height: 15vw;
+    }
+    #populaires {
+        width: 100%;
+        background-color: #F2F2F2;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    .popular_rooms a{
+        margin-bottom: 50px;
+    }
+    .soleil_matin{
+        display: block;
+        width: 95%;
+    }
+    .coeur_eau{
+        display: block;
+        width: 95%;
+    }
+    .bleu_blanc{
+        display: block;
+        width: 95%;
+    }
+    .popular_rooms img {
+        width: 100%;
+        height: 30vw;
+        object-fit: cover;
+        display: flex;
+        border-radius: 15px 15px 0 0;
+    }
+    .popular_rooms .text_stars{
+        font-size: 1.3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    #activities{
+        width: 100%;
+    }
+    .marseille_activities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .marseille_activities img{
+        height: 35vw;
+    }
+    .marseille_activities .vp{
+        width: 95%;
+        margin-bottom: 20px;       
+    }
+    .pomegues_frioul{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .po{
+        margin-bottom: 20px;
+    }
+    .cal{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    .notredame_longchamp{
+        width: 95%;
+    }
+    .nd{
+        margin-bottom: 20px;
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.85em;
+    }
 }
 
     
