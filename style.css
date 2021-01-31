@@ -574,7 +574,7 @@ footer ul li{
         font-size: 17px;
     }
     .champ{
-        padding: 0;
+        padding: 0 5px 0 0;
         border-right: 0;
     }
     #Filters{
