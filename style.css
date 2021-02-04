@@ -52,7 +52,7 @@ nav li a:hover{
     margin-bottom: 15px;
 }
 #search_bar span i{
-    border: 15px solid  #F2F2F2;
+    border: 17px solid  #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     background-color:   #F2F2F2;    
@@ -409,19 +409,27 @@ nav li a:hover{
 }
 .pomegues_frioul .po{
     width: 100%;
+    height: 55%;
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px #F2F2F2;
     border: 2px solid #F2F2F2;
 }
+.pomegues{
+    height: 100%;
+}
 .pomegues_frioul .fri{
     width: 100%;
+    height: 35%;
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px #F2F2F2;
     border: 2px solid #F2F2F2;
+}
+.frioul{
+    height: 100%;
 }
 .pomegues img{
     width: 100%;
@@ -431,7 +439,7 @@ nav li a:hover{
 }
 .frioul img{
     width: 100%;
-    height: 7vw;
+    height: 9vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -457,19 +465,27 @@ nav li a:hover{
 }
 .notredame_longchamp .nd{
     width: 100%;
+    height: 55%;
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px #F2F2F2;
     border: 2px solid #F2F2F2;
 }
+.notredame{
+    height: 100%;
+}
 .notredame_longchamp .lo{
     width: 100%;
+    height: 35%;
     text-decoration-line: none;
     color: black;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px #F2F2F2;
     border: 2px solid #F2F2F2;
+}
+.longchamp{
+    height: 100%;
 }
 .notredame img{
     width: 100%;
@@ -479,7 +495,7 @@ nav li a:hover{
 }
 .longchamp img{
     width: 100%;
-    height: 7vw;
+    height: 9vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -569,7 +585,8 @@ footer ul li{
         padding-left: 15px;
     }
     #search_bar{
-        padding: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
     }
     .button{
         display: none;
@@ -592,6 +609,7 @@ footer ul li{
     }
     .champ{
         border-right: 0;
+        font-size: 1em;
     }
     #Filters{
         padding-left: 10px;
@@ -755,8 +773,8 @@ footer ul li{
         margin-left: 20px;
     }
 }
-/* Règles applicables pour un écran d'une largeur allant de 561 pixels à 1102 pixels */
-@media screen and (min-width: 561px) and (max-width: 1102px){
+/* Règles applicables pour un écran d'une largeur allant de 561 pixels à 1126 pixels */
+@media screen and (min-width: 561px) and (max-width: 1126px){
     body{
         margin: 0;
     }
@@ -882,6 +900,9 @@ footer ul li{
     #activities{
         width: 100%;
     }
+    .title_activities{
+        padding-left: 20px;
+    }
     .marseille_activities {
         display: flex;
         flex-direction: column;
@@ -914,8 +935,9 @@ footer ul li{
     .footer {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         font-size: 0.85em;
+        padding: 0 15px 0 15px;
     }
 }
 
