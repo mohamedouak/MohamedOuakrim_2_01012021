@@ -592,7 +592,7 @@ footer ul li{
     .loupe{
         display: flex;
         border-radius: 15px;
-        border: 1px solid #0065FC;
+        border: 1px;
         padding: 0;
         position: relative;
         right: 8px;
