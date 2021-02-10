@@ -644,6 +644,9 @@ footer ul li{
     #infos{
         padding-left: 10px;
     }
+    .icon-text i{
+        width: 15%;
+    }
     #populaires{
         width: 100%;
         display: flex;
