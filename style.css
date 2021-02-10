@@ -600,7 +600,7 @@ footer ul li{
     i.fas.fa-search{
         color: white;
         background-color: #0065FC;
-        border: 16px solid #0065FC;
+        padding: 16px;
         border-radius: 14px;
         font-size: 17px;
     }
