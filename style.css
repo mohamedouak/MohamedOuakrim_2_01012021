@@ -592,7 +592,6 @@ footer ul li{
     .loupe{
         display: flex;
         border-radius: 15px;
-        background-color: #0065FC;
         border: 1px solid #0065FC;
         padding: 0;
         position: relative;
@@ -601,8 +600,8 @@ footer ul li{
     i.fas.fa-search{
         color: white;
         background-color: #0065FC;
-        border: 15px solid #0065FC;
-        border-radius: 15px;
+        border: 16px solid #0065FC;
+        border-radius: 14px;
         font-size: 17px;
     }
     .champ{
